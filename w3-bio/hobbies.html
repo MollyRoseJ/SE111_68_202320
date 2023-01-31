@@ -29,7 +29,7 @@ h1{text-align: center;display: inline-block}
 #main-content
 {
             
-            text-align:center;padding-left: 20px; padding-right: 20px;
+            text-align:center;padding-left: 20px; padding-right: 20px;color: rgb(64, 17, 17);
         }        
 #footer
 {
@@ -41,6 +41,11 @@ p {
 }
 a {
     padding-left: 20px}
+
+    a:visited {
+         color: rgb(64, 17, 17); 
+      }
+      a:link{color:rgb(134, 91, 111)}
     </style>
 </head>
 <body style="background-color: #fae9db;">
@@ -58,6 +63,7 @@ a {
                <a href="education.html"><b>Education</b></a>
                <a href="hobbies.html"><b>My Hobbies</b></a>
        </div><!--/ #nav--> 
+       <hr>
        <div id="main-content"> 
        <h2>My Hobbies</h2>
        <p>In my free time I like to read and paint, although I haven't been doing either of those things as often as I should. A few years ago a friend invited me to a rock climbing gym. I really liked it! I try to go a few times a week but I'm still not very good. I also love animals. I try to meet as many animals as I can.</p>
@@ -74,9 +80,10 @@ a {
         <p>and a penguin I got to meet. Her name is Yellow Blue.</p>
         <img src ="images/penguin.jpg" alt="waddling penguin">
         
-       </div><!--/ #bio-->  
-       <div id="footer"> 
-           <br>
+       </div><!--/ #main-content-->  
+       <hr>
+       <div id="footer" class="bg"> 
+         
            <a href="#header">Back to Top</a>
        </div><!--/ #footer-->     
        </div><!--/ #wrapper--> 
