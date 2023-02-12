@@ -23,7 +23,7 @@
         <th>Form Fields</th>
        </tr>
        <tr>
-        <td><label for="guardName">Parent/Guardian Name:</label></td>
+        <td>Parent/Guardian Name:</td>
         <td>
             <label for="gfirst">First Name:</label>
             <input type="text" id="g-first" name="gfirst" maxlength="20" placeholder="First Name" required>
@@ -33,7 +33,7 @@
         </td>
        </tr>
        <tr>
-        <td><label for="cfirst">Child First Name:</label></td>
+        <td>Child First Name:</td>
         <td>
             <input type="text" id="c-first" name="cfirst" placeholder="Child's First Name" required></td>
        </tr>
@@ -46,15 +46,15 @@
         <td>&nbsp</td>
        </tr>
        <tr>
-        <td><label for="date">Date:</label></td>
+        <td>Date:</td>
         <td><input type="date" id="date" name="date" required></td>
        </tr>
        <tr>
-        <td><label for="time">Starting Time:</label></td>
+        <td>Starting Time:</td>
         <td><input type="time" id="time" name="time" required></td>
        </tr>
        <tr>
-        <td><label for="number">Number of Guests:</label></td>
+        <td>Number of Guests:</td>
         <td><input type="number" id="number" name="number" value="5"></td>
        </tr>
        <tr>
@@ -62,7 +62,7 @@
         <td>&nbsp</td>
        </tr>
        <tr>
-        <td><label for="size">Size:</label></td>
+        <td>Size:</td>
         <td><label for="size">Small</label>
             <input type="radio" id="sm" name="size">
             <label for="size">Meduim</label>
@@ -99,24 +99,27 @@
         </td>
        </tr>
        <tr>
-        <td>Cell A11</td>
-        <td>Cell B11</td>
+        <td>Cake</td>
+        <td><select name="cake">
+            <option value="chocolate">Chocolate</option>
+            <option value="vanilla">Vanilla</option>
+            <option value="bring">I'll bring my own</option></td>
        </tr>
        <tr>
-        <td>Cell A12</td>
-        <td>Cell B12</td>
+        <td><h2>Decorations</h2></td>
+        <td>&nbsp</td>
        </tr>
        <tr>
-        <td>Cell A13</td>
-        <td>Cell B13</td>
+        <td>Color Scheme:</td>
+        <td><input type="color" id="color" name="color"></td>
        </tr>
        <tr>
-        <td>Cell A14</td>
-        <td>Cell B14</td>
+        <td>Additional Comments:</td>
+        <td><textarea name="comments" id="comments" placeholder="Please enter additional comments here"></textarea></td>
        </tr>
        <tr>
-        <td>Cell A15</td>
-        <td>Cell B15</td>
+        <td>&nbsp</td>
+        <td><input type="submit" value="submit"></td>
        </tr>
     </tbody>
 
