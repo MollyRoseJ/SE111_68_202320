@@ -11,11 +11,20 @@
     <link type="text/css" rel="stylesheet" href="style.css">
 
     <title>Week 5 | Tables and Forms</title>
+    <style>
+body {
+ background-image: url("images/party.png"); padding-left: 15px;
+ }
+table, th, td {
+  border: 1px solid black;padding: 10px; background-color: rgb(252, 249, 242);
+}
+h1{font-family: Arial, Helvetica, sans-serif;color: rgb(67, 0, 51)}
+    </style>
 </head>
 <body>
     <!--Build your Table and Form here-->
     <h1>Birthday Party Registration Form</h1>
-    
+    <form method="GET" action="confirm.html">
 <table>
     <tbody>
     <tr>
@@ -25,10 +34,8 @@
        <tr>
         <td>Parent/Guardian Name:</td>
         <td>
-            <label for="gfirst">First Name:</label>
             <input type="text" id="g-first" name="gfirst" maxlength="20" placeholder="First Name" required>
             <br>
-            <label for="glast">Last Name:</label>
             <input type="text" id="g-last" name="glast" maxlength="20" placeholder="Last Name" required>
         </td>
        </tr>
@@ -64,18 +71,18 @@
        <tr>
         <td>Size:</td>
         <td><label for="size">Small</label>
-            <input type="radio" id="sm" name="size">
+            <input type="radio" value="sm" name="size">
             <label for="size">Meduim</label>
-            <input type="radio" id="med" name="size">
+            <input type="radio" value="med" name="size">
             <label for="size">Large</label>
-            <input type="radio" id="lar" name="size">
+            <input type="radio" value="lar" name="size">
         </td>
        </tr>
        <tr>
         <td>Drinks</td>
         <td>
-            <input type="checkbox" id="coke" name="drink1" checked="true">
-            <label for="drink1">Coke<label></label>
+            <input type="checkbox" id="coke" name="drink1" value="coke">
+            <label for="drink1">Coke</label>
             
             <br>
 
@@ -111,7 +118,8 @@
        </tr>
        <tr>
         <td>Color Scheme:</td>
-        <td><input type="color" id="color" name="color"></td>
+        <td>Choose a color scheme for the party:<br>
+            <input type="color" id="color" name="color"></td>
        </tr>
        <tr>
         <td>Additional Comments:</td>
