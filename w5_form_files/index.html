@@ -51,7 +51,7 @@ h1{font-family: Arial, Helvetica, sans-serif;color:#484848}
        </tr>
        <tr>
         <td><h2>Date and Time</h2></td>
-        <td>&nbsp</td>
+        <td>&nbsp;</td>
        </tr>
        <tr>
         <td>Date:</td>
@@ -67,43 +67,43 @@ h1{font-family: Arial, Helvetica, sans-serif;color:#484848}
        </tr>
        <tr>
         <td><h2>Food</h2></td>
-        <td>&nbsp</td>
+        <td>&nbsp;</td>
        </tr>
        <tr>
         <td>Size:</td>
         <td>
-            <input type="radio" value="sm" name="size">
-            <label for="size">Small</label>
-            <input type="radio" value="med" name="size">
-            <label for="size">Meduim</label>
-            <input type="radio" value="lar" name="size">
-            <label for="size">Large</label>
+            <input type="radio" id="small" value="small" name="size">
+            <label for="small">Small</label>
+            <input type="radio" id="meduim" value="medium" name="size">
+            <label for="meduim">Meduim</label>
+            <input type="radio" id="large" value="large" name="size">
+            <label for="large">Large</label>
         </td>
        </tr>
        <tr>
         <td>Drinks</td>
         <td>
-            <input type="checkbox" name="drink1" value="coke">
+            <input type="checkbox" id="drink1" name="drink1" value="coke">
             <label for="drink1">Coke</label>
             
             <br>
 
-            <input type="checkbox" name="drink2" value="sprite">
-            <label for="drink2">Sprite<label>
+            <input type="checkbox" id="drink2" name="drink2" value="sprite">
+            <label for="drink2">Sprite</label>
                 
             <br>
 
-            <input type="checkbox" name="drink3" value="fruit punch">
+            <input type="checkbox" id="drink3" name="drink3" value="fruit punch">
             <label for="drink3">Fruit Punch</label>
                     
             <br>
 
-            <input type="checkbox" name="drink4" value="lemonade">
+            <input type="checkbox" id="drink4" name="drink4" value="lemonade">
             <label for="drink4">Lemonade</label>
 
             <br>
 
-            <input type="checkbox" name="drink5" value="iced tea">
+            <input type="checkbox" id="drink5" name="drink5" value="iced tea">
             <label for="drink5">Iced Tea</label>
         </td>
        </tr>
@@ -112,11 +112,13 @@ h1{font-family: Arial, Helvetica, sans-serif;color:#484848}
         <td><select name="cake">
             <option value="chocolate">Chocolate</option>
             <option value="vanilla">Vanilla</option>
-            <option value="bring">I'll bring my own</option></td>
+            <option value="bring">I'll bring my own</option>
+            </select>
+        </td>
        </tr>
        <tr>
         <td><h2>Decorations</h2></td>
-        <td>&nbsp</td>
+        <td>&nbsp;</td>
        </tr>
        <tr>
         <td>Color Scheme:</td>
@@ -128,12 +130,12 @@ h1{font-family: Arial, Helvetica, sans-serif;color:#484848}
         <td><textarea name="comments" id="comments" placeholder="Please enter additional comments here"></textarea></td>
        </tr>
        <tr>
-        <td>&nbsp</td>
+        <td>&nbsp;</td>
         <td><input type="submit" value="submit"></td>
        </tr>
     </tbody>
-
-</table>
     
+</table>
+</form>
 </body>
 </html>
