@@ -17,8 +17,9 @@ body {
  }
 table, th, td {
   border: 1px solid black;padding: 10px; background-color: rgb(252, 249, 242);
-}
-h1{font-family: Arial, Helvetica, sans-serif;color: rgb(67, 0, 51)}
+font-size: large;}
+h1{font-family: Arial, Helvetica, sans-serif;color:#484848}
+
     </style>
 </head>
 <body>
@@ -40,13 +41,13 @@ h1{font-family: Arial, Helvetica, sans-serif;color: rgb(67, 0, 51)}
         </td>
        </tr>
        <tr>
-        <td>Child First Name:</td>
+        <td>Child's First Name:</td>
         <td>
             <input type="text" id="c-first" name="cfirst" placeholder="Child's First Name" required></td>
        </tr>
        <tr>
         <td><label for="age">Child's Age:</label></td>
-        <td><input type="number" id="age" name="age" required></td>
+        <td><input type="number" id="age" name="age" required value="3"></td>
        </tr>
        <tr>
         <td><h2>Date and Time</h2></td>
@@ -54,15 +55,15 @@ h1{font-family: Arial, Helvetica, sans-serif;color: rgb(67, 0, 51)}
        </tr>
        <tr>
         <td>Date:</td>
-        <td><input type="date" id="date" name="date" required></td>
+        <td><input type="date" name="date" required></td>
        </tr>
        <tr>
         <td>Starting Time:</td>
-        <td><input type="time" id="time" name="time" required></td>
+        <td><input type="time" name="time" required></td>
        </tr>
        <tr>
         <td>Number of Guests:</td>
-        <td><input type="number" id="number" name="number" value="5"></td>
+        <td><input type="number" name="guests" value="5"></td>
        </tr>
        <tr>
         <td><h2>Food</h2></td>
@@ -70,38 +71,39 @@ h1{font-family: Arial, Helvetica, sans-serif;color: rgb(67, 0, 51)}
        </tr>
        <tr>
         <td>Size:</td>
-        <td><label for="size">Small</label>
+        <td>
             <input type="radio" value="sm" name="size">
-            <label for="size">Meduim</label>
+            <label for="size">Small</label>
             <input type="radio" value="med" name="size">
-            <label for="size">Large</label>
+            <label for="size">Meduim</label>
             <input type="radio" value="lar" name="size">
+            <label for="size">Large</label>
         </td>
        </tr>
        <tr>
         <td>Drinks</td>
         <td>
-            <input type="checkbox" id="coke" name="drink1" value="coke">
+            <input type="checkbox" name="drink1" value="coke">
             <label for="drink1">Coke</label>
             
             <br>
 
-            <input type="checkbox" id="sprite" name="drink2" value="sprite">
+            <input type="checkbox" name="drink2" value="sprite">
             <label for="drink2">Sprite<label>
                 
             <br>
 
-            <input type="checkbox" id="punch" name="drink3" value="fruit punch">
+            <input type="checkbox" name="drink3" value="fruit punch">
             <label for="drink3">Fruit Punch</label>
                     
             <br>
 
-            <input type="checkbox" id="lemonade" name="drink4" value="fruit punch">
+            <input type="checkbox" name="drink4" value="lemonade">
             <label for="drink4">Lemonade</label>
 
             <br>
 
-            <input type="checkbox" id="tea" name="drink5" value="fruit punch">
+            <input type="checkbox" name="drink5" value="iced tea">
             <label for="drink5">Iced Tea</label>
         </td>
        </tr>
@@ -119,7 +121,7 @@ h1{font-family: Arial, Helvetica, sans-serif;color: rgb(67, 0, 51)}
        <tr>
         <td>Color Scheme:</td>
         <td>Choose a color scheme for the party:<br>
-            <input type="color" id="color" name="color"></td>
+            <input type="color" name="color"></td>
        </tr>
        <tr>
         <td>Additional Comments:</td>
