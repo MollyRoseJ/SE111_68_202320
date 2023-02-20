@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W6 Homework</title>
+    <meta name="author" content="Molly Jencks">
+    <meta name="description" content="Javascript Pay Calculator">
+
+    <style>
+        h1 {text-align: center;}
+        p {font-size: 22px;}
+    </style>
+
+</head>
+
+<body>
+
+     <script>
+        var hours = prompt("Hello! How many hours did you work this pay period: ")
+        console.log(`number of hours: ${hours}`)
+        var rate = prompt("Please enter how much money you earn per hour")
+        console.log(`hourly rate:${rate}`)
+
+        var gross = hours*rate
+        var tax = gross*.2
+        var finalPay = gross-tax
+        var salary = finalPay.toFixed(2)
+        var g = gross.toFixed(2)
+        var t = tax.toFixed(2)
+
+        alert(`Gross Pay: $${g}
+        Uncle Sam's Share: $${t}
+        Net Pay: $${salary}`);
+
+        console.log(`gross pay: $${g}\nTaxes: $${t}\nnet: $${salary}`)
+     </script>  
+
+<h1>ACME CO. PAY CALCULATOR</h1>
+
+<p>Thank you! Have a nice day.</p>
+
+</body>
+
+</html>
