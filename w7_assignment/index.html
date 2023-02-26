@@ -7,6 +7,12 @@
     <meta name="author" content="Molly Jencks">
     <meta name="description" content="Week 7 Assignment practicing Javascript & HTML">
     <title>Week 7 | Pay Form Calculator Assignment</title>
+
+    <style>
+        table, td {
+  border: 1px solid black
+}
+    </style>
 </head>
 <body>
 
@@ -17,23 +23,29 @@
    <!--each <input> must have an id that matches its corresponding label -->
    <!--each form element is separated by a break space (new line) -->
     <form>
-        <label for="first">First Name: </label>
-        <input type="text" id="first">
-
-        <br>
-
-        <label for="last">Last Name: </label>
-        <input type="text" id="last">
-
-        <br>
-
-        <label for="hours">Hours Worked: </label>
-        <input type="text" id="hours">
-
-        <br>
-
-        <label for="rate">Hourly Rate: </label>
-        <input type="text" id="rate">
+        <table>
+        
+            <tr>   
+        <td> <label for="first">First Name: </label></td>
+        <td><input type="text" id="first"></td>
+            </tr> 
+       
+            <tr> 
+        <td> <label for="last">Last Name: </label></td>
+        <td>  <input type="text" id="last"></td>
+             </tr>
+        
+            <tr> 
+        <td> <label for="hours">Hours Worked: </label> </td>
+        <td> <input type="text" id="hours"> </td>
+            </tr>
+       
+            <tr>
+        <td><label for="rate">Hourly Rate: </label></td>
+        <td> <input type="text" id="rate"> </td>
+             </tr>
+        
+        </table>
 
         <br>
 
@@ -76,11 +88,13 @@
         {
             //get each *value* from the form elements (first name, last name, hours worked, hourly rate) and store them into vars
 
-            /*USE THE FOLLOWING VARIABLE NAMES:
+            /*
+            USE THE FOLLOWING VARIABLE NAMES:
             fname --> firstname, #first
             lname --> lastname, #last
-            hours --> hours worked, #hours
-            rate --> hourly rate, #rate */
+            hours --> hoursworked, #hours
+            rate --> hourlyrate, #rate 
+            */
             
             var fname = document.querySelector(`#first`).value 
             var lname = document.querySelector(`#last`).value
